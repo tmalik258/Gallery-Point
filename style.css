@@ -115,7 +115,7 @@ h1 {
 .gallery-item-large.active {
 	visibility: visible;
 	opacity: 1;
-	animation: enlarge 2s ease-in-out forwards;
+	animation: enlarge 1.6s ease-in-out forwards;
 }
 
 .gallery-item-large img {
