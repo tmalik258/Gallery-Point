@@ -114,19 +114,18 @@ h1 {
 }
 
 .gallery-item-large.show {
+	visibility: visible;
+	opacity: 1;
 	background-color: #000000b3;
+	animation: 1.6s ease-in-out forwards;
 }
 
 .gallery-grid .gallery-item:nth-of-type(odd) .gallery-item-large.show {
-	visibility: visible;
-	opacity: 1;
-	animation: enlargeLeft 1.6s ease-in-out forwards;
+	animation-name: enlargeLeft;
 }
 
 .gallery-grid .gallery-item:nth-of-type(even) .gallery-item-large.show {
-	visibility: visible;
-	opacity: 1;
-	animation: enlargeRight 1.6s ease-in-out forwards;
+	animation-name: enlargeRight;
 }
 
 .gallery-item-large.hide {
@@ -155,7 +154,7 @@ h1 {
 
 @keyframes enlargeRight {
 	0% {
-		transform: translate(140%, -50%) scale(0);
+		transform: translate(30%, -50%) scale(0);
 	}
 
 	75% {
