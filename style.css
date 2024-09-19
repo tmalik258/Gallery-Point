@@ -74,7 +74,6 @@ h1 {
 	grid-template-columns: repeat(2, 1fr);
 	grid-auto-rows: 400px;
 	place-items: start;
-	place-content: center;
 	gap: 2rem;
 	/* border: 1px solid #fff; */
 }
@@ -94,3 +93,46 @@ h1 {
 	place-self: end;
 }
 /*----------- Gallery Grid end ------------------*/
+
+/*----------- Pagination start ------------------*/
+.pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	color: grey;
+}
+
+.pagination .page-item .page-link {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	color: grey;
+	background: none;
+	border: none;
+	width: 2.5rem;
+	height: 2.5rem;
+	font-size: 1.3rem;
+}
+
+.pagination .page-item.active .page-link {
+	color: white;
+	border-bottom: 3px solid;
+}
+
+.pagination .page-item .page-link:hover {
+	color: white;
+}
+
+.pagination .page-arrow {
+	font-size: 30px;
+	background-color: #0E0E0E;
+	color: white;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.pagination .page-arrow.disabled {
+	cursor: not-allowed;
+}
+/*----------- Pagination end ------------------*/
