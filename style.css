@@ -98,6 +98,27 @@ h1 {
 .gallery-grid .gallery-item:nth-of-type(odd) {
 	place-self: end;
 }
+
+@media screen and (width < 992px) {
+	.gallery-grid {
+		grid-auto-rows: 200px;
+		gap: 1rem;
+	}
+}
+
+@media screen and (width < 768px) {
+	.gallery-grid {
+		grid-auto-rows: 150px;
+		gap: .8rem;
+	}
+}
+
+@media screen and (width < 500px) {
+	.gallery-grid {
+		grid-auto-rows: 100px;
+		gap: .6rem;
+	}
+}
 /*----------- Gallery Grid end ------------------*/
 
 /*----------- Gallery Item Large Start ------------------*/
