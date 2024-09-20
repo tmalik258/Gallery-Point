@@ -65,6 +65,24 @@ h1 {
 		padding-inline: .8rem;
 	}
 }
+
+@media screen and (width < 500px) {
+	h1 {
+		font-size: 1.4rem;
+	}
+
+	.navbar-expand .navbar-nav .nav-link {
+		font-size: .84rem;
+		padding-inline: .45rem;
+	}
+}
+
+@media screen and (width < 400px) {
+	.navbar-expand .navbar-nav .nav-link {
+		font-size: .79rem;
+		padding-inline: .3rem;
+	}
+}
 /*----------- header end ------------------*/
 
 
@@ -262,7 +280,6 @@ h1 {
 	background: none;
 	border: none;
 	width: 2.5rem;
-	height: 2.5rem;
 	font-size: 1.3rem;
 }
 
@@ -285,5 +302,40 @@ h1 {
 
 .pagination .page-arrow.disabled {
 	cursor: not-allowed;
+}
+
+@media screen and (width < 992px) {
+	.pagination .page-item .page-link {
+		font-size: 1rem;
+	}
+
+	.pagination .page-arrow {
+		font-size: 25px;
+	}
+}
+
+@media screen and (width < 768px) {
+	.pagination .page-item .page-link {
+		font-size: .85rem;
+	}
+}
+
+@media screen and (width < 500px) {
+	.pagination {
+		gap: .5rem;
+	}
+
+	.pagination .page-item .page-link {
+		width: 2.2rem;
+		font-size: .7rem;
+	}
+
+	.pagination .page-item.active .page-link {
+		border-bottom: 2px solid;
+	}
+
+	.pagination .page-arrow {
+		font-size: 22px;
+	}
 }
 /*----------- Pagination end ------------------*/
